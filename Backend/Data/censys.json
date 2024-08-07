@@ -1,0 +1,2653 @@
+{
+    "code": 200,
+    "status": "OK",
+    "result": {
+        "ip": "184.64.100.125",
+        "services": [
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 404 Not Found\r\nServer: Microsoft-IIS/10.0\r\nDate:  <REDACTED>\r\nContent-Length: 0\r\n",
+                "banner_hashes": [
+                    "sha256:5ae89aa4dc59e8084a8148785778b559abbc43669f2890e252db68f902727f25"
+                ],
+                "banner_hex": "485454502f312e3120343034204e6f7420466f756e640d0a5365727665723a204d6963726f736f66742d4949532f31302e300d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d4c656e6774683a20300d0a",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 404,
+                        "status_reason": "Not Found",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "Microsoft-IIS/10.0"
+                            ],
+                            "Content_Length": [
+                                "0"
+                            ]
+                        },
+                        "body_size": 0
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-28T16:50:17.274599463Z",
+                "perspective_id": "PERSPECTIVE_TATA",
+                "port": 80,
+                "service_name": "HTTP",
+                "software": [
+                    {
+                        "part": "o",
+                        "vendor": "Microsoft",
+                        "other": {
+                            "family": "Windows"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    },
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:a:microsoft:internet_information_services:10.0:*:*:*:*:*:*:*",
+                        "part": "a",
+                        "vendor": "Microsoft",
+                        "product": "IIS",
+                        "version": "10.0",
+                        "other": {
+                            "family": "IIS"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    }
+                ],
+                "source_ip": "167.94.138.35",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "banner_grab",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8"
+                },
+                "banner": "",
+                "banner_hashes": [
+                    "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                ],
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+                "extended_service_name": "DCERPC",
+                "observed_at": "2024-07-28T07:10:23.077312717Z",
+                "parsed": {
+                    "dcerpc": {
+                        "could_bind": true,
+                        "could_query_epm": true,
+                        "endpoints": [
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "2c7fd9ce-e706-4b40-b412-953107ef9bb0 v0.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "085b0334-e454-4d91-9b8c-4134f9e793f3 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "be7f785e-0e3a-4ab7-91de-7e46e443be29 v0.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-530f8ccc7ca3b988fe]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "e38f5360-8572-473e-b696-1b46873beeab v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-458bb1a5e22f70da8c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "8fb74744-b2ff-4c00-be0d-9ef9a191fe1b v1.0 Ngc Pop Key Service",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49724]",
+                                    "ncalrpc:[samss lpc]",
+                                    "ncalrpc:[SidKey Local End Point]",
+                                    "ncalrpc:[protected_storage]",
+                                    "ncalrpc:[lsasspirpc]",
+                                    "ncalrpc:[lsapolicylookup]",
+                                    "ncalrpc:[LSA_EAS_ENDPOINT]",
+                                    "ncalrpc:[LSA_IDPEXT_ENDPOINT]",
+                                    "ncalrpc:[lsacap]",
+                                    "ncalrpc:[LSARPC_ENDPOINT]",
+                                    "ncalrpc:[securityevent]",
+                                    "ncalrpc:[audit]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\pipe\\lsass]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "9b008953-f195-4bf9-bde0-4471971e58ed v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-c73c3395c0a367e166]",
+                                    "ncalrpc:[LRPC-376701287167faba4a]",
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-TSCH]: Task Scheduler Service Remoting Protocol",
+                                "executable": "schedsvc.dll",
+                                "explained_uuid": "86d35949-83c9-4044-b424-db363231fd0c v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49666]",
+                                    "ncalrpc:[LRPC-6f16184e87bc9bdb74]",
+                                    "ncalrpc:[ubpmtaskhostchannel]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\atsvc]",
+                                    "ncalrpc:[LRPC-322bdab9f32bc54f51]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "d22895ef-aff4-42c5-a5b2-b14466d34ab4 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-458bb1a5e22f70da8c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "95095ec8-32ea-4eb0-a3e2-041f97b36168 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-458bb1a5e22f70da8c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "f3f09ffd-fbcf-4291-944d-70ad6e0e73bb v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-e0912ca4cbaaa1616a]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "4dace966-a243-4450-ae3f-9b7bcb5315b8 v2.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "55e6b932-1979-45d6-90c5-7f6270724112 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "0d3e2735-cea0-4ecc-a9e2-41a2d81aed4e v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "winlogon.exe",
+                                "explained_uuid": "12e65dd8-887f-41ef-91bf-8d816c42c2e7 v1.0 Secure Desktop LRPC interface",
+                                "bindings": [
+                                    "ncalrpc:[WMsgKRpc0B7601]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "dhcpcsvc6.dll",
+                                "explained_uuid": "3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6 v1.0 DHCPv6 Client LRPC Endpoint",
+                                "bindings": [
+                                    "ncalrpc:[dhcpcsvc6]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "a1d4eae7-39f8-4bca-8e72-832767f5082a v1.0 Device Association Framework Inbound RPC Interface",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-b604efc7700cb808c1]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "c521facf-09a9-42c5-b155-72388595cbf0 v0.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "b8cadbaf-e84b-46b9-84f2-6f71c03f9e55 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "nsisvc.dll",
+                                "explained_uuid": "7ea70bcf-48af-4f6a-8968-6a440754d5fa v1.0 NSI server endpoint",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-4ab1b4af4521b7dd58]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "spoolsv.exe",
+                                "explained_uuid": "4a452661-8290-4b36-8fbe-7f4093a94978 v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49668]",
+                                    "ncalrpc:[LRPC-b23752509ecf5388dc]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "650a7e26-eab8-5533-ce43-9c1dfce11511 v1.0 Vpn APIs",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-5981a005dce3300337]",
+                                    "ncalrpc:[VpnikeRpc]",
+                                    "ncalrpc:[RasmanLrpc]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\ROUTER]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "6982a06e-5fe2-46b1-b39c-a2c545bfa069 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-TSCH]: Task Scheduler Service Remoting Protocol",
+                                "executable": "taskcomp.dll",
+                                "explained_uuid": "1ff70682-0a51-30e8-076d-740be8cee98b v1.0",
+                                "bindings": [
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\atsvc]",
+                                    "ncalrpc:[LRPC-322bdab9f32bc54f51]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-SCMR]: Service Control Manager Remote Protocol",
+                                "executable": "services.exe",
+                                "explained_uuid": "367abb81-9844-35f1-ad32-98f038001003 v2.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49729]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "gpsvc.dll",
+                                "explained_uuid": "2eb08e3e-639f-4fba-97b1-14f878961076 v1.0 Group Policy RPC Interface",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-6b813e12f42fc0fb8b]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "1832bcf6-cab8-41d4-85d2-c9410764f75a v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "dd59071b-3215-4c59-8481-972edadc0f6a v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-FASP]: Firewall and Advanced Security Protocol",
+                                "executable": "FwRemoteSvr.dll",
+                                "explained_uuid": "6b5bdd1e-528c-422c-af8c-a4079be4fe48 v1.0 Remote Fw APIs",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49673]",
+                                    "ncalrpc:[ipsec]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "923c9623-db7f-4b34-9e6d-e86580f8ca2a v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-d55d76468565091cde]",
+                                    "ncalrpc:[OLE21E27A4586EC79EC9003CB5CAC5D]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "0ff1f646-13bb-400a-ab50-9a78f2b7a85a v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "76c217bc-c8b4-4201-a745-373ad9032b1a v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "schedsvc.dll",
+                                "explained_uuid": "0a74ef1c-41a4-4e06-83ae-dc74fb1cdd53 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-322bdab9f32bc54f51]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-RPRN]: Print System Remote Protocol",
+                                "executable": "spoolsv.exe",
+                                "explained_uuid": "12345678-1234-abcd-ef00-0123456789ab v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49668]",
+                                    "ncalrpc:[LRPC-b23752509ecf5388dc]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "51a227ae-825b-41f2-b4a9-1ac9557a1018 v1.0 Ngc Pop Key Service",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49724]",
+                                    "ncalrpc:[samss lpc]",
+                                    "ncalrpc:[SidKey Local End Point]",
+                                    "ncalrpc:[protected_storage]",
+                                    "ncalrpc:[lsasspirpc]",
+                                    "ncalrpc:[lsapolicylookup]",
+                                    "ncalrpc:[LSA_EAS_ENDPOINT]",
+                                    "ncalrpc:[LSA_IDPEXT_ENDPOINT]",
+                                    "ncalrpc:[lsacap]",
+                                    "ncalrpc:[LSARPC_ENDPOINT]",
+                                    "ncalrpc:[securityevent]",
+                                    "ncalrpc:[audit]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\pipe\\lsass]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "0fc77b1a-95d8-4a2e-a0c0-cff54237462b v0.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-4c2073c39562c81c4e]",
+                                    "ncalrpc:[OLE340171EB26877F9075AA33D72744]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "2513bcbe-6cd4-4348-855e-7efb3c336dd3 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-TSCH]: Task Scheduler Service Remoting Protocol",
+                                "executable": "taskcomp.dll",
+                                "explained_uuid": "378e52b0-c0a9-11cf-822d-00aa0051e40f v1.0",
+                                "bindings": [
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\atsvc]",
+                                    "ncalrpc:[LRPC-322bdab9f32bc54f51]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "1a0d010f-1c33-432c-b0f5-8cf4e8053099 v1.0 IdSegSrv service",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-0600a0a3e51c55a2f2]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "54b4c689-969a-476f-8dc2-990885e9f562 v0.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-530f8ccc7ca3b988fe]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "4ed8abcc-f1e2-438b-981f-bb0e8abc010c v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "a500d4c6-0dd1-4543-bc0c-d5f93486eaf8 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-d5789c34461f817ace]",
+                                    "ncalrpc:[LRPC-eeb5442824d21a4895]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "b18fbab6-56f8-4702-84e0-41053293a869 v1.0 UserMgrCli",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-0b3990703334e8c2bf]",
+                                    "ncalrpc:[OLE783E85B45C96D68E9BF03ED0DF03]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "7f1343fe-50a9-4927-a778-0c5859517bac v1.0 DfsDs service",
+                                "bindings": [
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\wkssvc]",
+                                    "ncalrpc:[LRPC-a43c5dc6168ac560bf]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "3a9ef155-691d-4449-8d05-09ad57031823 v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49666]",
+                                    "ncalrpc:[LRPC-6f16184e87bc9bdb74]",
+                                    "ncalrpc:[ubpmtaskhostchannel]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\atsvc]",
+                                    "ncalrpc:[LRPC-322bdab9f32bc54f51]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "c2d1b5dd-fa81-4460-9dd6-e7658b85454b v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-fa60ec1fb3e6276aa0]",
+                                    "ncalrpc:[OLE54DDA8A7311B32C72B23ACDA1ADD]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "857fb1be-084f-4fb5-b59c-4b2c4be5f0cf v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "7aeb6705-3ae6-471a-882d-f39c109edc12 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-fa60ec1fb3e6276aa0]",
+                                    "ncalrpc:[OLE54DDA8A7311B32C72B23ACDA1ADD]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-PAN]: Print System Asynchronous Notification Protocol",
+                                "executable": "spoolsv.exe",
+                                "explained_uuid": "0b6edbfa-4a24-4fc6-8a23-942b1eca65d1 v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49668]",
+                                    "ncalrpc:[LRPC-b23752509ecf5388dc]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "fd8be72b-a9cd-4b2c-a9ca-4ded242fbe4d v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-458bb1a5e22f70da8c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "5222821f-d5e2-4885-84f1-5f6185a0ec41 v1.0 Network Connection Broker server endpoint for NCB Reset module",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-230c718695d07f2095]",
+                                    "ncalrpc:[LRPC-1d12f05c941ae9bf5c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "b1ef227e-dfa5-421e-82bb-67a6a129c496 v0.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-4c2073c39562c81c4e]",
+                                    "ncalrpc:[OLE340171EB26877F9075AA33D72744]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "8782d3b9-ebbd-4644-a3d8-e8725381919b v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "eb081a0d-10ee-478a-a1dd-50995283e7a8 v3.0 Witness Client Test Interface",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-a43c5dc6168ac560bf]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "iphlpsvc.dll",
+                                "explained_uuid": "552d076a-cb29-4e44-8b6a-d15e59e2c0af v1.0 IP Transition Configuration endpoint",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-d85f0c1dcfd56f231b]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "wscsvc.dll",
+                                "explained_uuid": "06bba54a-be05-49f9-b0a0-30f790261023 v1.0 Security Center",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-a2de38f39315f07779]",
+                                    "ncalrpc:[OLEFF5F3A877BC48AAA96540AC44673]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "0d47017b-b33b-46ad-9e18-fe96456c5078 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "sysmain.dll",
+                                "explained_uuid": "b58aa02e-2884-4e97-8176-4ee06d794184 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-da05156d56bcc3100d]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "bd84cd86-9825-4376-813d-334c543f89b1 v1.0 Device Association Framework Query RPC Interface",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-b604efc7700cb808c1]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "4c9dbf19-d39e-4bb9-90ee-8f7179b20283 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-458bb1a5e22f70da8c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "3473dd4d-2e88-4006-9cba-22570909dd10 v5.1 WinHttp Auto-Proxy Service",
+                                "bindings": [
+                                    "ncalrpc:[e1da2197-118d-4f4d-861c-1836308ed514]",
+                                    "ncalrpc:[LRPC-51dbe9ad926b44b6f7]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "e53d94ca-7464-4839-b044-09a2fb8b3ae5 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "880fd55e-43b9-11e0-b1a8-cf4edfd72085 v1.0 KAPI Service endpoint",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-ac56d83e59e1d75a02]",
+                                    "ncalrpc:[OLEA511B9E7F3696A6507990F17FB45]",
+                                    "ncalrpc:[LRPC-230c718695d07f2095]",
+                                    "ncalrpc:[LRPC-1d12f05c941ae9bf5c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "srvsvc.dll",
+                                "explained_uuid": "98716d03-89ac-44c7-bb8c-285824e51c4a v1.0 XactSrv service",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-0600a0a3e51c55a2f2]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "2f5f6521-cb55-1059-b446-00df0bce31db v1.0 Unimodem LRPC Endpoint",
+                                "bindings": [
+                                    "ncalrpc:[unimdmsvc]",
+                                    "ncalrpc:[tapsrvlpc]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\pipe\\tapsrv]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "8ec21e98-b5ce-4916-a3d6-449fa428a007 v0.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-4c2073c39562c81c4e]",
+                                    "ncalrpc:[OLE340171EB26877F9075AA33D72744]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "c27f3c08-92ba-478c-b446-b419c4cef0e2 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-14d2e2deff0b21bdfb]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "bf4dc912-e52f-4904-8ebe-9317c1bdd497 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-4abecb63a8e8a651e2]",
+                                    "ncalrpc:[OLE44ECDE3B94825E5733C4FA33D149]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "d09bdeb5-6171-4a34-bfe2-06fa82652568 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[csebpub]",
+                                    "ncalrpc:[LRPC-40c811d8a0f006c154]",
+                                    "ncalrpc:[LRPC-c73c3395c0a367e166]",
+                                    "ncalrpc:[LRPC-376701287167faba4a]",
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]",
+                                    "ncalrpc:[LRPC-c73c3395c0a367e166]",
+                                    "ncalrpc:[LRPC-376701287167faba4a]",
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]",
+                                    "ncalrpc:[LRPC-376701287167faba4a]",
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]",
+                                    "ncalrpc:[LRPC-eeb5442824d21a4895]",
+                                    "ncalrpc:[LRPC-1d12f05c941ae9bf5c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "082a3471-31b6-422a-b931-a54401960c62 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "c605f9fb-f0a3-4e2a-a073-73560f8d9e3e v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "nrpsrv.dll",
+                                "explained_uuid": "30adc50c-5cbc-46ce-9a0e-91914789e23c v1.0 NRP server endpoint",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-0080dff68f384902b8]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "MPSSVC.dll",
+                                "explained_uuid": "2fb92682-6599-42dc-ae13-bd2ca89bd11c v1.0 Fw APIs",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-4d4b1a3c67810bb114]",
+                                    "ncalrpc:[LRPC-f157cb4036c3a4d64e]",
+                                    "ncalrpc:[LRPC-04524b013391e10ca0]",
+                                    "ncalrpc:[LRPC-c67f9ffc0504fbe351]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "MPSSVC.dll",
+                                "explained_uuid": "7f9d11bf-7fb9-436b-a812-b2d50c5d4c03 v1.0 Fw APIs",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-04524b013391e10ca0]",
+                                    "ncalrpc:[LRPC-c67f9ffc0504fbe351]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "95406f0b-b239-4318-91bb-cea3a46ff0dc v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "f44e62af-dab1-44c2-8013-049a9de417d6 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-fa60ec1fb3e6276aa0]",
+                                    "ncalrpc:[OLE54DDA8A7311B32C72B23ACDA1ADD]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "abfb6ca3-0c5e-4734-9285-0aee72fe8d1c v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-fa60ec1fb3e6276aa0]",
+                                    "ncalrpc:[OLE54DDA8A7311B32C72B23ACDA1ADD]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "fc48cd89-98d6-4628-9839-86f7a3e4161a v1.0",
+                                "bindings": [
+                                    "ncalrpc:[dabrpc]",
+                                    "ncalrpc:[csebpub]",
+                                    "ncalrpc:[LRPC-40c811d8a0f006c154]",
+                                    "ncalrpc:[LRPC-c73c3395c0a367e166]",
+                                    "ncalrpc:[LRPC-376701287167faba4a]",
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "c36be077-e14b-4fe9-8abc-e856ef4f048b v1.0 Proxy Manager client server endpoint",
+                                "bindings": [
+                                    "ncalrpc:[TeredoControl]",
+                                    "ncalrpc:[TeredoDiagnostics]",
+                                    "ncalrpc:[LRPC-d85f0c1dcfd56f231b]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "850cee52-3038-4277-b9b4-e05db8b2c35c v1.0 Device Association Framework Association RPC Interface",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-b604efc7700cb808c1]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "pcasvc.dll",
+                                "explained_uuid": "0767a036-0d22-48aa-ba69-b619480f38cb v1.0 PcaSvc",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-51c9f0ed3a1c37f117]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-RSP]: Remote Shutdown Protocol",
+                                "executable": "wininit.exe",
+                                "explained_uuid": "d95afe70-a6d5-4259-822e-2c84da1ddb0d v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49664]",
+                                    "ncalrpc:[WindowsShutdown]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\InitShutdown]",
+                                    "ncalrpc:[WMsgKRpc0B0EB0]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "5824833b-3c1a-4ad2-bdfd-c31d19e23ed2 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "e40f7b57-7a25-4cd3-a135-7f7d3df9d16b v1.0 Network Connection Broker server endpoint",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-ac56d83e59e1d75a02]",
+                                    "ncalrpc:[OLEA511B9E7F3696A6507990F17FB45]",
+                                    "ncalrpc:[LRPC-230c718695d07f2095]",
+                                    "ncalrpc:[LRPC-1d12f05c941ae9bf5c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "0d3c7f20-1c8d-4654-a1b3-51563b298bda v1.0 UserMgrCli",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-0b3990703334e8c2bf]",
+                                    "ncalrpc:[OLE783E85B45C96D68E9BF03ED0DF03]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-PAN]: Print System Asynchronous Notification Protocol",
+                                "executable": "spoolsv.exe",
+                                "explained_uuid": "ae33069b-a2a8-46ee-a235-ddfd339be281 v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49668]",
+                                    "ncalrpc:[LRPC-b23752509ecf5388dc]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "2e6035b2-e8f1-41a7-a044-656b439c4c34 v1.0 Proxy Manager provider server endpoint",
+                                "bindings": [
+                                    "ncalrpc:[TeredoControl]",
+                                    "ncalrpc:[TeredoDiagnostics]",
+                                    "ncalrpc:[LRPC-d85f0c1dcfd56f231b]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "88abcbc3-34ea-76ae-8215-767520655a23 v0.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "f47433c3-3e9d-4157-aad4-83aa1f5c2d4c v1.0 Fw APIs",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-f157cb4036c3a4d64e]",
+                                    "ncalrpc:[LRPC-04524b013391e10ca0]",
+                                    "ncalrpc:[LRPC-c67f9ffc0504fbe351]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "c503f532-443a-4c69-8300-ccd1fbdb3839 v2.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-f364ab19b0750484df]",
+                                    "ncalrpc:[OLEC95A2FADFD2C5BC0CB9F89265C51]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "winlogon.exe",
+                                "explained_uuid": "76f226c3-ec14-4325-8a99-6a46348418af v1.0",
+                                "bindings": [
+                                    "ncalrpc:[WindowsShutdown]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\InitShutdown]",
+                                    "ncalrpc:[WMsgKRpc0B0EB0]",
+                                    "ncalrpc:[WMsgKRpc0B7601]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "2d98a740-581d-41b9-aa0d-a88b9d5ce938 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "4bec6bb8-b5c2-4b6f-b2c1-5da5cf92d0d9 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "5b665b9a-a086-4e26-ae24-96ab050b0ec3 v1.0 Device Association Framework AEP Store Access RPC Interface",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-b604efc7700cb808c1]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "2e7d4935-59d2-4312-a2c8-41900aa5495f v1.0 Device Association Framework Challenge RPC Interface",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-b604efc7700cb808c1]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-SAMR]: Security Account Manager (SAM) Remote Protocol",
+                                "executable": "samsrv.dll",
+                                "explained_uuid": "12345778-1234-abcd-ef00-0123456789ac v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49724]",
+                                    "ncalrpc:[samss lpc]",
+                                    "ncalrpc:[SidKey Local End Point]",
+                                    "ncalrpc:[protected_storage]",
+                                    "ncalrpc:[lsasspirpc]",
+                                    "ncalrpc:[lsapolicylookup]",
+                                    "ncalrpc:[LSA_EAS_ENDPOINT]",
+                                    "ncalrpc:[LSA_IDPEXT_ENDPOINT]",
+                                    "ncalrpc:[lsacap]",
+                                    "ncalrpc:[LSARPC_ENDPOINT]",
+                                    "ncalrpc:[securityevent]",
+                                    "ncalrpc:[audit]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\pipe\\lsass]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "d2716e94-25cb-4820-bc15-537866578562 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-d55d76468565091cde]",
+                                    "ncalrpc:[OLE21E27A4586EC79EC9003CB5CAC5D]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "1b37ca91-76b1-4f5e-a3c7-2abfc61f2bb0 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "bdaa0970-413b-4a3e-9e5d-f6dc9d7e0760 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "dhcpcsvc.dll",
+                                "explained_uuid": "3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5 v1.0 DHCP Client LRPC Endpoint",
+                                "bindings": [
+                                    "ncalrpc:[dhcpcsvc]",
+                                    "ncalrpc:[dhcpcsvc6]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "4c8d0bef-d7f1-49f0-9102-caa05f58d114 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[nlaapi]",
+                                    "ncalrpc:[nlaplg]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "IKEEXT.DLL",
+                                "explained_uuid": "a398e520-d59a-4bdd-aa7a-3c1e0303a511 v1.0 IKE/Authip API",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-ed6354483ebd1e4cfe]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "98cd761e-e77d-41c8-a3c0-0fb756d90ec2 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-458bb1a5e22f70da8c]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "a4b8d482-80ce-40d6-934d-b22a01a44fe7 v1.0 LicenseManager",
+                                "bindings": [
+                                    "ncalrpc:[LicenseServiceEndpoint]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "sysntfy.dll",
+                                "explained_uuid": "c9ac6db5-82b7-4e55-ae8a-e464ed7b4277 v1.0 Impl friendly name",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-8f51163ed8049d4352]",
+                                    "ncalrpc:[IUserProfile2]",
+                                    "ncalrpc:[LRPC-521330669e9ef9b27e]",
+                                    "ncalrpc:[senssvc]",
+                                    "ncalrpc:[LRPC-27df635dea1f63a693]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "df4df73a-c52d-4e3a-8003-8437fdf8302a v0.0 WM_WindowManagerRPC\\Server",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-2a9348f8096c4f09ef]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "178d84be-9291-4994-82c6-3f909aca5a03 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "8bfc3be1-6def-4e2d-af74-7c47cd0ade4a v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "0361ae94-0316-4c6c-8ad8-c594375800e2 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "f2c9b409-c1c9-4100-8639-d8ab1486694a v1.0 Witness Client Upcall Server",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-a43c5dc6168ac560bf]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "20c40295-8dba-48e6-aebf-3e78ef3bb144 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "b25a52bf-e5dd-4f4a-aea6-8ca7272a0e86 v2.0 KeyIso",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49724]",
+                                    "ncalrpc:[samss lpc]",
+                                    "ncalrpc:[SidKey Local End Point]",
+                                    "ncalrpc:[protected_storage]",
+                                    "ncalrpc:[lsasspirpc]",
+                                    "ncalrpc:[lsapolicylookup]",
+                                    "ncalrpc:[LSA_EAS_ENDPOINT]",
+                                    "ncalrpc:[LSA_IDPEXT_ENDPOINT]",
+                                    "ncalrpc:[lsacap]",
+                                    "ncalrpc:[LSARPC_ENDPOINT]",
+                                    "ncalrpc:[securityevent]",
+                                    "ncalrpc:[audit]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\pipe\\lsass]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "fae436b0-b864-4a87-9eda-298547cd82f2 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "3b338d89-6cfa-44b8-847e-531531bc9992 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "b37f900a-eae4-4304-a2ab-12bb668c0188 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-fa60ec1fb3e6276aa0]",
+                                    "ncalrpc:[OLE54DDA8A7311B32C72B23ACDA1ADD]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "BFE.DLL",
+                                "explained_uuid": "dd490425-5325-4565-b774-7e27d6c09c24 v1.0 Base Firewall Engine API",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-c67f9ffc0504fbe351]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "ssdpsrv.dll",
+                                "explained_uuid": "4b112204-0e19-11d3-b42b-0000f81feb9f v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-feb1a940c3474c2141]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "0c53aa2e-fb1c-49c5-bfb6-c54f8e5857cd v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-d55d76468565091cde]",
+                                    "ncalrpc:[OLE21E27A4586EC79EC9003CB5CAC5D]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "33d84484-3626-47ee-8c6f-e7e98b113be1 v2.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-6f16184e87bc9bdb74]",
+                                    "ncalrpc:[ubpmtaskhostchannel]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\PIPE\\atsvc]",
+                                    "ncalrpc:[LRPC-322bdab9f32bc54f51]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-PAR]: Print System Asynchronous Remote Protocol",
+                                "executable": "spoolsv.exe",
+                                "explained_uuid": "76f03f96-cdfd-44fc-a22c-64950a001209 v1.0",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49668]",
+                                    "ncalrpc:[LRPC-b23752509ecf5388dc]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "c49a5a70-8a7f-4e70-ba16-1e8f1f193ef1 v1.0 Adh APIs",
+                                "bindings": [
+                                    "ncalrpc:[OLED9D2D712B554FC88310C4B794F8C]",
+                                    "ncalrpc:[TeredoControl]",
+                                    "ncalrpc:[TeredoDiagnostics]",
+                                    "ncalrpc:[LRPC-d85f0c1dcfd56f231b]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "697dcda9-3ba9-4eb2-9247-e11f1901b0d2 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-40c811d8a0f006c154]",
+                                    "ncalrpc:[LRPC-c73c3395c0a367e166]",
+                                    "ncalrpc:[LRPC-376701287167faba4a]",
+                                    "ncalrpc:[LRPC-341489c6e0b7b13aa8]",
+                                    "ncalrpc:[LRPC-bc9428376372262bd0]",
+                                    "ncalrpc:[OLE9170267E7809587A1C73265643F5]",
+                                    "ncalrpc:[LRPC-eb1569f812dede1e45]",
+                                    "ncalrpc:[actkernel]",
+                                    "ncalrpc:[umpo]"
+                                ]
+                            },
+                            {
+                                "protocol": "[MS-EVEN6]: EventLog Remoting Protocol",
+                                "executable": "wevtsvc.dll",
+                                "explained_uuid": "f6beaff7-1e19-4fbb-9f8f-b89e2018337c v1.0 Event log TCPIP",
+                                "bindings": [
+                                    "ncacn_ip_tcp:184.64.100.125[49665]",
+                                    "ncacn_np:\\\\SMASH1682BOH[\\pipe\\eventlog]",
+                                    "ncalrpc:[eventlog]"
+                                ]
+                            },
+                            {
+                                "protocol": "N/A",
+                                "executable": "N/A",
+                                "explained_uuid": "e7f76134-9ef5-4949-a2d6-3368cc0988f3 v1.0",
+                                "bindings": [
+                                    "ncalrpc:[LRPC-fa60ec1fb3e6276aa0]",
+                                    "ncalrpc:[OLE54DDA8A7311B32C72B23ACDA1ADD]"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "perspective_id": "PERSPECTIVE_NTT",
+                "port": 135,
+                "service_name": "DCERPC",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "microsoft",
+                        "product": "windows",
+                        "source": "OSI_TRANSPORT_LAYER"
+                    }
+                ],
+                "source_ip": "206.168.34.120",
+                "transport_fingerprint": {
+                    "id": 429,
+                    "os": "Windows *",
+                    "raw": "65535,128,true,MNWNNS,1460,false,false"
+                },
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "smb",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "SMB SMB 2.1",
+                "banner_hashes": [
+                    "sha256:51d9f41a595c653b76dbff0adeec37710decd99e91825ba2de9ef6e273bfcaf0"
+                ],
+                "banner_hex": "534d4220534d4220322e31",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+                "extended_service_name": "SMB",
+                "labels": [
+                    "file-sharing"
+                ],
+                "observed_at": "2024-07-29T01:15:05.176193268Z",
+                "perspective_id": "PERSPECTIVE_HE",
+                "port": 445,
+                "service_name": "SMB",
+                "smb": {
+                    "smb_version": {
+                        "major": 2,
+                        "minor": 1,
+                        "version_string": "SMB 2.1",
+                        "revision": 0
+                    },
+                    "smb_capabilities": {
+                        "smb_dfs_support": true,
+                        "smb_leasing_support": true,
+                        "smb_multicredit_support": true,
+                        "smb_multichan_support": false,
+                        "smb_persistent_handle_support": false,
+                        "smb_directory_leasing_support": false,
+                        "smb_encryption_support": false
+                    },
+                    "has_ntlm": true,
+                    "negotiation_log": {
+                        "header_log": {
+                            "_encoding": {
+                                "protocol_id": "DISPLAY_HEX"
+                            },
+                            "protocol_id": "00000000fe534d42",
+                            "credits": 1,
+                            "flags": 1,
+                            "status": 0,
+                            "command": 0
+                        },
+                        "security_mode": 1,
+                        "dialect_revision": 528,
+                        "_encoding": {
+                            "server_guid": "DISPLAY_HEX"
+                        },
+                        "server_guid": "00000000000000000000000000000000980bbd128d82334d9194d2306f9d03b0",
+                        "capabilities": 7,
+                        "system_time": 1722215704,
+                        "server_start_time": 1240428288,
+                        "authentication_types": [
+                            "1.3.6.1.4.1.311.2.2.30",
+                            "1.3.6.1.4.1.311.2.2.10"
+                        ]
+                    },
+                    "session_setup_log": {
+                        "header_log": {
+                            "_encoding": {
+                                "protocol_id": "DISPLAY_HEX"
+                            },
+                            "protocol_id": "00000000fe534d42",
+                            "status": 3221225494,
+                            "command": 1,
+                            "credits": 1,
+                            "flags": 1
+                        },
+                        "target_name": "SMASH1682BOH",
+                        "negotiate_flags": 2726953477,
+                        "setup_flags": 0
+                    },
+                    "smbv1_support": false
+                },
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "microsoft",
+                        "product": "windows",
+                        "source": "OSI_TRANSPORT_LAYER"
+                    }
+                ],
+                "source_ip": "162.142.125.192",
+                "transport_fingerprint": {
+                    "id": 429,
+                    "os": "Windows *",
+                    "raw": "65535,128,true,MNWNNS,1460,false,false"
+                },
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 403 Forbidden\r\nServer: HASP LM/15.00\r\nDate:  <REDACTED>\r\nContent-Type: text/html\r\nContent-Length: 137\r\n",
+                "banner_hashes": [
+                    "sha256:3457a7312b4d7583dec0b6bdcf3c0a94dca8d4e9149891bf173fb0e145bd34dd"
+                ],
+                "banner_hex": "485454502f312e312034303320466f7262696464656e0d0a5365727665723a2048415350204c4d2f31352e30300d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d547970653a20746578742f68746d6c0d0a436f6e74656e742d4c656e6774683a203133370d0a",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_3",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:1947/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 403,
+                        "status_reason": "Forbidden",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "HASP LM/15.00"
+                            ],
+                            "Content_Length": [
+                                "137"
+                            ],
+                            "Content_Type": [
+                                "text/html"
+                            ]
+                        },
+                        "_encoding": {
+                            "html_tags": "DISPLAY_UTF8",
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8",
+                            "html_title": "DISPLAY_UTF8"
+                        },
+                        "html_tags": [
+                            "<title>403 Forbidden</title>"
+                        ],
+                        "body_size": 137,
+                        "body": "<title>403 Forbidden</title>\n<h1>403 Forbidden</h1>\nAccess to this resource has been denied to you.\n<p>Please contact the administrator.\n",
+                        "body_hashes": [
+                            "sha256:a7fd759e0d0bfc5e0dbf9ade621ea33b5f5c10621c19259a2e6dcf734fe8c2fa",
+                            "sha1:64d269f1b801583e0144d74e4d31c925208f936d"
+                        ],
+                        "body_hash": "sha1:64d269f1b801583e0144d74e4d31c925208f936d",
+                        "html_title": "403 Forbidden"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-29T05:28:20.487571304Z",
+                "perspective_id": "PERSPECTIVE_NTT_2",
+                "port": 1947,
+                "service_name": "HTTP",
+                "source_ip": "199.45.155.83",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 503 Service Unavailable\r\nContent-Type: text/html; charset=us-ascii\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate:  <REDACTED>\r\nConnection: close\r\nContent-Length: 326\r\n",
+                "banner_hashes": [
+                    "sha256:261ed56dc3fa7ee778c8ee610995a61a2907a6dd4db9ea07cd7eaabf6ff509ee"
+                ],
+                "banner_hex": "485454502f312e3120353033205365727669636520556e617661696c61626c650d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d75732d61736369690d0a5365727665723a204d6963726f736f66742d485454504150492f322e300d0a446174653a20203c52454441435445443e0d0a436f6e6e656374696f6e3a20636c6f73650d0a436f6e74656e742d4c656e6774683a203332360d0a",
+                "discovery_method": "PREDICTIVE_METHOD_16",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:5357/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 503,
+                        "status_reason": "Service Unavailable",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8",
+                                "Connection": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "Microsoft-HTTPAPI/2.0"
+                            ],
+                            "Content_Length": [
+                                "326"
+                            ],
+                            "Content_Type": [
+                                "text/html; charset=us-ascii"
+                            ],
+                            "Connection": [
+                                "close"
+                            ]
+                        },
+                        "_encoding": {
+                            "html_tags": "DISPLAY_UTF8",
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8",
+                            "html_title": "DISPLAY_UTF8"
+                        },
+                        "html_tags": [
+                            "<TITLE>Service Unavailable</TITLE>",
+                            "<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\">"
+                        ],
+                        "body_size": 326,
+                        "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Service Unavailable</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"></HEAD>\r\n<BODY><h2>Service Unavailable</h2>\r\n<hr><p>HTTP Error 503. The service is unavailable.</p>\r\n</BODY></HTML>\r\n",
+                        "body_hashes": [
+                            "sha256:fb2d9f058c2010c57f86a05ae33d282f33e3825290c66b8b120cd177416c6bdf",
+                            "sha1:c29683b3788d729a5fc4504279d10e31da60745c"
+                        ],
+                        "body_hash": "sha1:c29683b3788d729a5fc4504279d10e31da60745c",
+                        "html_title": "Service Unavailable"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-29T05:00:06.831211304Z",
+                "perspective_id": "PERSPECTIVE_ORANGE",
+                "port": 5357,
+                "service_name": "HTTP",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "Microsoft",
+                        "product": "Windows",
+                        "other": {
+                            "family": "Windows"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    },
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:a:microsoft:http_api:2.0:*:*:*:*:*:*:*",
+                        "part": "a",
+                        "vendor": "Microsoft",
+                        "product": "HTTP API",
+                        "version": "2.0",
+                        "source": "OSI_APPLICATION_LAYER"
+                    }
+                ],
+                "source_ip": "167.94.145.107",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "banner_grab",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8"
+                },
+                "banner": "",
+                "banner_hashes": [
+                    "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                ],
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+                "extended_service_name": "WINRM",
+                "observed_at": "2024-07-28T19:03:03.897666193Z",
+                "parsed": {
+                    "winrm": {
+                        "auth_types": [
+                            "Negotiate"
+                        ],
+                        "ntlm_info": {
+                            "encryption_56bit_supported": true,
+                            "encryption_128bit_supported": true,
+                            "ntlm1_supported": true,
+                            "ntlm2_supported": true,
+                            "always_sign_supported": true,
+                            "challenge_type": 3,
+                            "target_name": "S\u0000M\u0000A\u0000S\u0000H\u00001\u00006\u00008\u00002\u0000B\u0000O\u0000H\u0000",
+                            "netbios_computer_name": "S\u0000M\u0000A\u0000S\u0000H\u00001\u00006\u00008\u00002\u0000B\u0000O\u0000H\u0000",
+                            "netbios_domain_name": "S\u0000M\u0000A\u0000S\u0000H\u00001\u00006\u00008\u00002\u0000B\u0000O\u0000H\u0000",
+                            "dns_server_name": "S\u0000M\u0000A\u0000S\u0000H\u00001\u00006\u00008\u00002\u0000B\u0000O\u0000H\u0000",
+                            "dns_domain_name": "S\u0000M\u0000A\u0000S\u0000H\u00001\u00006\u00008\u00002\u0000B\u0000O\u0000H\u0000",
+                            "dns_tree_name": "",
+                            "os_version": "10.0.17763",
+                            "ntlm_version": 15
+                        }
+                    }
+                },
+                "perspective_id": "PERSPECTIVE_NTT",
+                "port": 5985,
+                "service_name": "WINRM",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "microsoft",
+                        "product": "windows",
+                        "source": "OSI_TRANSPORT_LAYER"
+                    }
+                ],
+                "source_ip": "206.168.34.220",
+                "transport_fingerprint": {
+                    "id": 429,
+                    "os": "Windows *",
+                    "raw": "65535,128,true,MNWNNS,1460,false,false"
+                },
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 404 Not Found\r\nContent-Type: text/html; charset=us-ascii\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate:  <REDACTED>\r\nConnection: close\r\nContent-Length: 315\r\n",
+                "banner_hashes": [
+                    "sha256:d7de42c1e8c09cf951e3ad6248fda3ab48a60ca3eac8b25effd4b3067df8f362"
+                ],
+                "banner_hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d75732d61736369690d0a5365727665723a204d6963726f736f66742d485454504150492f322e300d0a446174653a20203c52454441435445443e0d0a436f6e6e656374696f6e3a20636c6f73650d0a436f6e74656e742d4c656e6774683a203331350d0a",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:8000/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 404,
+                        "status_reason": "Not Found",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8",
+                                "Connection": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "Microsoft-HTTPAPI/2.0"
+                            ],
+                            "Content_Length": [
+                                "315"
+                            ],
+                            "Content_Type": [
+                                "text/html; charset=us-ascii"
+                            ],
+                            "Connection": [
+                                "close"
+                            ]
+                        },
+                        "_encoding": {
+                            "html_tags": "DISPLAY_UTF8",
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8",
+                            "html_title": "DISPLAY_UTF8"
+                        },
+                        "html_tags": [
+                            "<TITLE>Not Found</TITLE>",
+                            "<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\">"
+                        ],
+                        "body_size": 315,
+                        "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Not Found</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not Found</h2>\r\n<hr><p>HTTP Error 404. The requested resource is not found.</p>\r\n</BODY></HTML>\r\n",
+                        "body_hashes": [
+                            "sha256:ce7127c38e30e92a021ed2bd09287713c6a923db9ffdb43f126e8965d777fbf0",
+                            "sha1:a66898b36c94c53766e66c1a7aaeb149447ec083"
+                        ],
+                        "body_hash": "sha1:a66898b36c94c53766e66c1a7aaeb149447ec083",
+                        "html_title": "Not Found"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-28T20:37:33.489686020Z",
+                "perspective_id": "PERSPECTIVE_HE",
+                "port": 8000,
+                "service_name": "HTTP",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "Microsoft",
+                        "product": "Windows",
+                        "other": {
+                            "family": "Windows"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    },
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:a:microsoft:http_api:2.0:*:*:*:*:*:*:*",
+                        "part": "a",
+                        "vendor": "Microsoft",
+                        "product": "HTTP API",
+                        "version": "2.0",
+                        "source": "OSI_APPLICATION_LAYER"
+                    }
+                ],
+                "source_ip": "162.142.125.222",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "banner_grab",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "<cmcsys:myNodeNumber=0 myNodeName=SMASH1682BOH|nodeIsProxy=False<:EOM:>",
+                "banner_hashes": [
+                    "sha256:a22cf7186b8d81925882f556b21c11179010b85573f0a4e57f3a9abfdd8b9fed"
+                ],
+                "banner_hex": "3c636d637379733a6d794e6f64654e756d6265723d30206d794e6f64654e616d653d534d41534831363832424f487c6e6f6465497350726f78793d46616c73653c3a454f4d3a3e",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+                "extended_service_name": "UNKNOWN",
+                "observed_at": "2024-07-28T02:12:54.354215018Z",
+                "perspective_id": "PERSPECTIVE_ORANGE",
+                "port": 8089,
+                "service_name": "UNKNOWN",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "microsoft",
+                        "product": "windows",
+                        "source": "OSI_TRANSPORT_LAYER"
+                    }
+                ],
+                "source_ip": "167.94.145.104",
+                "transport_fingerprint": {
+                    "id": 429,
+                    "os": "Windows *",
+                    "raw": "65535,128,true,MNWNNS,1460,false,false"
+                },
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "banner_grab",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "certificate": "DISPLAY_HEX",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "<cmcsys:myNodeNumber=0 myNodeName=SMASH1682BOH|nodeIsProxy=False<:EOM:>",
+                "banner_hashes": [
+                    "sha256:a22cf7186b8d81925882f556b21c11179010b85573f0a4e57f3a9abfdd8b9fed"
+                ],
+                "banner_hex": "3c636d637379733a6d794e6f64654e756d6265723d30206d794e6f64654e616d653d534d41534831363832424f487c6e6f6465497350726f78793d46616c73653c3a454f4d3a3e",
+                "certificate": "b0b3a0ed6a9cd3da2e9b5a0761f466350f5c3a95e756d4f4fc8ae9b671a4a821",
+                "discovery_method": "PREDICTIVE_METHOD_24",
+                "extended_service_name": "UNKNOWN",
+                "jarm": {
+                    "_encoding": {
+                        "fingerprint": "DISPLAY_HEX",
+                        "cipher_and_version_fingerprint": "DISPLAY_HEX",
+                        "tls_extensions_sha256": "DISPLAY_HEX"
+                    },
+                    "fingerprint": "2ad2ad16d2ad2ad0002ad2ad2ad2add3b67dd3674d9af9dd91c1955a35d0e9",
+                    "cipher_and_version_fingerprint": "2ad2ad16d2ad2ad0002ad2ad2ad2ad",
+                    "tls_extensions_sha256": "d3b67dd3674d9af9dd91c1955a35d0e9",
+                    "observed_at": "2024-07-22T15:41:10.527343347Z"
+                },
+                "observed_at": "2024-07-28T14:59:34.761704980Z",
+                "perspective_id": "PERSPECTIVE_PCCW",
+                "port": 8090,
+                "service_name": "UNKNOWN",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "microsoft",
+                        "product": "windows",
+                        "source": "OSI_TRANSPORT_LAYER"
+                    }
+                ],
+                "source_ip": "199.45.154.137",
+                "tls": {
+                    "version_selected": "TLSv1_2",
+                    "cipher_selected": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+                    "certificates": {
+                        "_encoding": {
+                            "leaf_fp_sha_256": "DISPLAY_HEX"
+                        },
+                        "leaf_fp_sha_256": "b0b3a0ed6a9cd3da2e9b5a0761f466350f5c3a95e756d4f4fc8ae9b671a4a821",
+                        "leaf_data": {
+                            "names": [
+                                "localhost"
+                            ],
+                            "subject_dn": "C=US, ST=TX, O=NCR Corporation, OU=Hospitality, CN=NCR CMC CmcAgent",
+                            "issuer_dn": "C=US, ST=TX, O=NCR Corporation, OU=Hospitality, CN=NCR CMC CA",
+                            "pubkey_bit_size": 2048,
+                            "pubkey_algorithm": "RSA",
+                            "tbs_fingerprint": "08444af0a95f03588983d775802d65684cb2241b7d73cfa09c36ff2249400d86",
+                            "fingerprint": "b0b3a0ed6a9cd3da2e9b5a0761f466350f5c3a95e756d4f4fc8ae9b671a4a821",
+                            "issuer": {
+                                "common_name": [
+                                    "NCR CMC CA"
+                                ],
+                                "organization": [
+                                    "NCR Corporation"
+                                ],
+                                "organizational_unit": [
+                                    "Hospitality"
+                                ],
+                                "province": [
+                                    "TX"
+                                ],
+                                "country": [
+                                    "US"
+                                ]
+                            },
+                            "subject": {
+                                "common_name": [
+                                    "NCR CMC CmcAgent"
+                                ],
+                                "organization": [
+                                    "NCR Corporation"
+                                ],
+                                "organizational_unit": [
+                                    "Hospitality"
+                                ],
+                                "province": [
+                                    "TX"
+                                ],
+                                "country": [
+                                    "US"
+                                ]
+                            },
+                            "public_key": {
+                                "key_algorithm": "RSA",
+                                "rsa": {
+                                    "_encoding": {
+                                        "modulus": "DISPLAY_BASE64",
+                                        "exponent": "DISPLAY_BASE64"
+                                    },
+                                    "modulus": "vH3FNn6n6YQe6l3gyTsmovrU6roSNkW4BMzeV6mx3meSmHtr4nsbgo29zmNGtCOj/n+SyOW3j96ETB9deI/lUv2OSlXvz7JkItL3XOmKbrzVBRQlQBLHUB4cTrPKPb72qQZv5c4w+uQFuvDkR8ea3U2nXOepo5lS7TDSh1hT0u1H+QjyrvkqE70FVLTra4xUKwpfa8r09WJOejgXfXCU0Ue4c/gHEdjW53HbGXmy/RnzexjTbuUEmFFq9+qaFOauZz+hV1RDUNZO1ZeN8iWmzN71yLN53dnRvKQMvh1XyxMKFrfokS323Nz18/oeu1X4K1sZ0Y7yTJgbduAt7LJF0Q==",
+                                    "exponent": "AAEAAQ==",
+                                    "length": 256
+                                },
+                                "fingerprint": "ca2930bb27ca818443e526d662e91af1a7340999a33a717b6eeaf4f7f23773b9"
+                            },
+                            "signature": {
+                                "signature_algorithm": "SHA256-RSA",
+                                "self_signed": false
+                            }
+                        }
+                    },
+                    "server_key_exchange": {
+                        "ec_params": {
+                            "named_curve": 24
+                        }
+                    },
+                    "_encoding": {
+                        "ja3s": "DISPLAY_HEX"
+                    },
+                    "ja3s": "364ff14b04ef93c3b4cfa429d729c0d9",
+                    "ja4s": "t120100_c030_bc98f8e001b5",
+                    "versions": [
+                        {
+                            "tls_version": "TLSv1_2",
+                            "_encoding": {
+                                "ja3s": "DISPLAY_HEX"
+                            },
+                            "ja3s": "364ff14b04ef93c3b4cfa429d729c0d9",
+                            "ja4s": "t120100_c030_bc98f8e001b5"
+                        }
+                    ]
+                },
+                "transport_fingerprint": {
+                    "id": 429,
+                    "os": "Windows *",
+                    "raw": "65535,128,true,MNWNNS,1460,false,false"
+                },
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 404 Not Found\r\nContent-Length: 68\r\nContent-Type: text/html\r\nContent-Encoding: gzip\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate:  <REDACTED>\r\n",
+                "banner_hashes": [
+                    "sha256:434fb03b5d1c46941b112685a80744d50bc874c5d08d67aa8d66cb5eb274e1c4"
+                ],
+                "banner_hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d4c656e6774683a2036380d0a436f6e74656e742d547970653a20746578742f68746d6c0d0a436f6e74656e742d456e636f64696e673a20677a69700d0a5365727665723a204d6963726f736f66742d485454504150492f322e300d0a446174653a20203c52454441435445443e0d0a",
+                "discovery_method": "PREDICTIVE_METHOD_24",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:8100/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 404,
+                        "status_reason": "Not Found",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8",
+                                "Content_Encoding": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "Microsoft-HTTPAPI/2.0"
+                            ],
+                            "Content_Length": [
+                                "68"
+                            ],
+                            "Content_Type": [
+                                "text/html"
+                            ],
+                            "Content_Encoding": [
+                                "gzip"
+                            ]
+                        },
+                        "body_size": 63,
+                        "_encoding": {
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8"
+                        },
+                        "body": "<html><head></head><body><h1>404 - Not Found</h1></body></html>",
+                        "body_hashes": [
+                            "sha256:0ead8e36df96cdb1e88ccbb78a7a0685c1b6da02c28e19492bc6556e3b5ccf5d",
+                            "sha1:70a3e6035cb0d7afd07cb1f3f9af13c770aed308"
+                        ],
+                        "body_hash": "sha1:70a3e6035cb0d7afd07cb1f3f9af13c770aed308"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-29T05:44:38.902638942Z",
+                "perspective_id": "PERSPECTIVE_ORANGE",
+                "port": 8100,
+                "service_name": "HTTP",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "Microsoft",
+                        "product": "Windows",
+                        "other": {
+                            "family": "Windows"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    },
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:a:microsoft:http_api:2.0:*:*:*:*:*:*:*",
+                        "part": "a",
+                        "vendor": "Microsoft",
+                        "product": "HTTP API",
+                        "version": "2.0",
+                        "source": "OSI_APPLICATION_LAYER"
+                    }
+                ],
+                "source_ip": "167.94.145.104",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 404 Not Found\r\nExpires: Mon, 29 Jul 2024 04:59:59 UTC\r\nServer: Microsoft-HTTPAPI/2.0\r\ncontent-length: 0\r\nNCREncrypt: True\r\nDate:  <REDACTED>\r\nContent-Length: 0\r\n",
+                "banner_hashes": [
+                    "sha256:cb3a0506e589b274daa4897618687c188aef00e21dc74550e0e65bf3dae5bb13"
+                ],
+                "banner_hex": "485454502f312e3120343034204e6f7420466f756e640d0a457870697265733a204d6f6e2c203239204a756c20323032342030343a35393a3539205554430d0a5365727665723a204d6963726f736f66742d485454504150492f322e300d0a636f6e74656e742d6c656e6774683a20300d0a4e4352456e63727970743a20547275650d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d4c656e6774683a20300d0a",
+                "discovery_method": "PREDICTIVE_METHOD_24",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:8889/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 404,
+                        "status_reason": "Not Found",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "NCREncrypt": "DISPLAY_UTF8",
+                                "content_length": "DISPLAY_UTF8",
+                                "Expires": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "Microsoft-HTTPAPI/2.0"
+                            ],
+                            "Content_Length": [
+                                "0"
+                            ],
+                            "NCREncrypt": [
+                                "True"
+                            ],
+                            "content_length": [
+                                "0"
+                            ],
+                            "Expires": [
+                                "Mon, 29 Jul 2024 04:59:59 UTC"
+                            ]
+                        },
+                        "body_size": 0
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-29T05:00:00.214588032Z",
+                "perspective_id": "PERSPECTIVE_NTT",
+                "port": 8889,
+                "service_name": "HTTP",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "Microsoft",
+                        "product": "Windows",
+                        "other": {
+                            "family": "Windows"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    },
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:a:microsoft:http_api:2.0:*:*:*:*:*:*:*",
+                        "part": "a",
+                        "vendor": "Microsoft",
+                        "product": "HTTP API",
+                        "version": "2.0",
+                        "source": "OSI_APPLICATION_LAYER"
+                    }
+                ],
+                "source_ip": "206.168.34.45",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "banner_grab",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": ".NET\u0001\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0003\u0001\u0000\u0003\u0000\u0001\u0001\u0015\u0002\u0000\u0000System.Runtime.Remoting.RemotingException: Tcp channel protocol violation: expecting preamble.\r\n   at System.Runtime.Remoting.Channels.Tcp.TcpSocketHandler.ReadAndMatchPreamble()\r\n   at System.Runtime.Remoting.Channels.Tcp.TcpSocketHandler.ReadVersionAndOperation(UInt16& operation)\r\n   at System.Runtime.Remoting.Channels.Tcp.TcpServerSocketHandler.ReadHeaders()\r\n   at System.Runtime.Remoting.Channels.Tcp.TcpServerTransportSink.ServiceRequest(Object state)\r\n   at System.Runtime.Rem",
+                "banner_hashes": [
+                    "sha256:cdfa9ba841fa7dc9b99f44b8ba04ef191bd33e1f0a8d84272e9bb9ef56bdef27"
+                ],
+                "banner_hex": "2e4e4554010002000000000000000200030100030001011502000053797374656d2e52756e74696d652e52656d6f74696e672e52656d6f74696e67457863657074696f6e3a20546370206368616e6e656c2070726f746f636f6c2076696f6c6174696f6e3a20657870656374696e6720707265616d626c652e0d0a20202061742053797374656d2e52756e74696d652e52656d6f74696e672e4368616e6e656c732e5463702e546370536f636b657448616e646c65722e52656164416e644d61746368507265616d626c6528290d0a20202061742053797374656d2e52756e74696d652e52656d6f74696e672e4368616e6e656c732e5463702e546370536f636b657448616e646c65722e5265616456657273696f6e416e644f7065726174696f6e2855496e74313626206f7065726174696f6e290d0a20202061742053797374656d2e52756e74696d652e52656d6f74696e672e4368616e6e656c732e5463702e546370536572766572536f636b657448616e646c65722e526561644865616465727328290d0a20202061742053797374656d2e52756e74696d652e52656d6f74696e672e4368616e6e656c732e5463702e5463705365727665725472616e73706f727453696e6b2e5365727669636552657175657374284f626a656374207374617465290d0a20202061742053797374656d2e52756e74696d652e52656d",
+                "discovery_method": "PREDICTIVE_METHOD_24",
+                "extended_service_name": "UNKNOWN",
+                "observed_at": "2024-07-29T05:33:06.173777069Z",
+                "perspective_id": "PERSPECTIVE_NTT_2",
+                "port": 8899,
+                "service_name": "UNKNOWN",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "microsoft",
+                        "product": "windows",
+                        "source": "OSI_TRANSPORT_LAYER"
+                    }
+                ],
+                "source_ip": "199.45.155.110",
+                "transport_fingerprint": {
+                    "id": 429,
+                    "os": "Windows *",
+                    "raw": "65535,128,true,MNWNNS,1460,false,false"
+                },
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html; charset=us-ascii\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate:  <REDACTED>\r\nConnection: close\r\nContent-Length: 334\r\n",
+                "banner_hashes": [
+                    "sha256:29298e562ed96657efcb840c0a4539eb78e550b87d3bf2978d2eee1df4706542"
+                ],
+                "banner_hex": "485454502f312e31203430302042616420526571756573740d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d75732d61736369690d0a5365727665723a204d6963726f736f66742d485454504150492f322e300d0a446174653a20203c52454441435445443e0d0a436f6e6e656374696f6e3a20636c6f73650d0a436f6e74656e742d4c656e6774683a203333340d0a",
+                "discovery_method": "PREDICTIVE_METHOD_24",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:11004/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 400,
+                        "status_reason": "Bad Request",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8",
+                                "Connection": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "Microsoft-HTTPAPI/2.0"
+                            ],
+                            "Content_Length": [
+                                "334"
+                            ],
+                            "Content_Type": [
+                                "text/html; charset=us-ascii"
+                            ],
+                            "Connection": [
+                                "close"
+                            ]
+                        },
+                        "_encoding": {
+                            "html_tags": "DISPLAY_UTF8",
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8",
+                            "html_title": "DISPLAY_UTF8"
+                        },
+                        "html_tags": [
+                            "<TITLE>Bad Request</TITLE>",
+                            "<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\">"
+                        ],
+                        "body_size": 334,
+                        "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Bad Request</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"></HEAD>\r\n<BODY><h2>Bad Request - Invalid Hostname</h2>\r\n<hr><p>HTTP Error 400. The request hostname is invalid.</p>\r\n</BODY></HTML>\r\n",
+                        "body_hashes": [
+                            "sha256:11817d8de31dfa9c918df2e6be30a8ecd778b72362f65825b29dc0e0c617db35",
+                            "sha1:ec0a74912bbab9320d8b25cfe4193df2c05c8380"
+                        ],
+                        "body_hash": "sha1:ec0a74912bbab9320d8b25cfe4193df2c05c8380",
+                        "html_title": "Bad Request"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-29T04:13:16.525686897Z",
+                "perspective_id": "PERSPECTIVE_NTT_2",
+                "port": 11004,
+                "service_name": "HTTP",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "Microsoft",
+                        "product": "Windows",
+                        "other": {
+                            "family": "Windows"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    },
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:a:microsoft:http_api:2.0:*:*:*:*:*:*:*",
+                        "part": "a",
+                        "vendor": "Microsoft",
+                        "product": "HTTP API",
+                        "version": "2.0",
+                        "source": "OSI_APPLICATION_LAYER"
+                    }
+                ],
+                "source_ip": "199.45.155.71",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 404 Not Found\r\nServer: spray-can/1.3.3\r\nDate:  <REDACTED>\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Length: 42\r\n",
+                "banner_hashes": [
+                    "sha256:6090a7a60e6fc0a39b663ea5451bb20a299708bb1a69f1624365f9397ca2d25b"
+                ],
+                "banner_hex": "485454502f312e3120343034204e6f7420466f756e640d0a5365727665723a2073707261792d63616e2f312e332e330d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d547970653a20746578742f706c61696e3b20636861727365743d5554462d380d0a436f6e74656e742d4c656e6774683a2034320d0a",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_3",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:22280/information",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 404,
+                        "status_reason": "Not Found",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "spray-can/1.3.3"
+                            ],
+                            "Content_Length": [
+                                "42"
+                            ],
+                            "Content_Type": [
+                                "text/plain; charset=UTF-8"
+                            ]
+                        },
+                        "body_size": 42,
+                        "_encoding": {
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8"
+                        },
+                        "body": "The requested resource could not be found.",
+                        "body_hashes": [
+                            "sha256:4a1643ef46e69ee61a1507bfd8356e6ef13bd3fdc1de88b4176b7f8368213361",
+                            "sha1:0b7e734f76965c5533022971179ef8b072a1715b"
+                        ],
+                        "body_hash": "sha1:0b7e734f76965c5533022971179ef8b072a1715b"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-29T04:04:58.326367735Z",
+                "perspective_id": "PERSPECTIVE_HE",
+                "port": 22280,
+                "service_name": "HTTP",
+                "source_ip": "162.142.125.202",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 404 Not Found\r\nContent-Type: text/html; charset=us-ascii\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate:  <REDACTED>\r\nConnection: close\r\nContent-Length: 315\r\n",
+                "banner_hashes": [
+                    "sha256:d7de42c1e8c09cf951e3ad6248fda3ab48a60ca3eac8b25effd4b3067df8f362"
+                ],
+                "banner_hex": "485454502f312e3120343034204e6f7420466f756e640d0a436f6e74656e742d547970653a20746578742f68746d6c3b20636861727365743d75732d61736369690d0a5365727665723a204d6963726f736f66742d485454504150492f322e300d0a446174653a20203c52454441435445443e0d0a436f6e6e656374696f6e3a20636c6f73650d0a436f6e74656e742d4c656e6774683a203331350d0a",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_1",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:47001/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 404,
+                        "status_reason": "Not Found",
+                        "headers": {
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "_encoding": {
+                                "Date": "DISPLAY_UTF8",
+                                "Server": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8",
+                                "Connection": "DISPLAY_UTF8"
+                            },
+                            "Server": [
+                                "Microsoft-HTTPAPI/2.0"
+                            ],
+                            "Content_Length": [
+                                "315"
+                            ],
+                            "Content_Type": [
+                                "text/html; charset=us-ascii"
+                            ],
+                            "Connection": [
+                                "close"
+                            ]
+                        },
+                        "_encoding": {
+                            "html_tags": "DISPLAY_UTF8",
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8",
+                            "html_title": "DISPLAY_UTF8"
+                        },
+                        "html_tags": [
+                            "<TITLE>Not Found</TITLE>",
+                            "<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\">"
+                        ],
+                        "body_size": 315,
+                        "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Not Found</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not Found</h2>\r\n<hr><p>HTTP Error 404. The requested resource is not found.</p>\r\n</BODY></HTML>\r\n",
+                        "body_hashes": [
+                            "sha256:ce7127c38e30e92a021ed2bd09287713c6a923db9ffdb43f126e8965d777fbf0",
+                            "sha1:a66898b36c94c53766e66c1a7aaeb149447ec083"
+                        ],
+                        "body_hash": "sha1:a66898b36c94c53766e66c1a7aaeb149447ec083",
+                        "html_title": "Not Found"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-28T12:54:50.764676214Z",
+                "perspective_id": "PERSPECTIVE_TELIA",
+                "port": 47001,
+                "service_name": "HTTP",
+                "software": [
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                        "part": "o",
+                        "vendor": "Microsoft",
+                        "product": "Windows",
+                        "other": {
+                            "family": "Windows"
+                        },
+                        "source": "OSI_APPLICATION_LAYER"
+                    },
+                    {
+                        "uniform_resource_identifier": "cpe:2.3:a:microsoft:http_api:2.0:*:*:*:*:*:*:*",
+                        "part": "a",
+                        "vendor": "Microsoft",
+                        "product": "HTTP API",
+                        "version": "2.0",
+                        "source": "OSI_APPLICATION_LAYER"
+                    }
+                ],
+                "source_ip": "167.94.146.63",
+                "transport_protocol": "TCP",
+                "truncated": false
+            },
+            {
+                "_decoded": "http",
+                "_encoding": {
+                    "banner": "DISPLAY_UTF8",
+                    "banner_hex": "DISPLAY_HEX"
+                },
+                "banner": "HTTP/1.1 500 Internal Server Error\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate:  <REDACTED>\r\nContent-Length: 30\r\n",
+                "banner_hashes": [
+                    "sha256:e8fe0b800fec1319f8a72d43cb43076f4d069e0885a9c5ac252819bb28202172"
+                ],
+                "banner_hex": "485454502f312e312035303020496e7465726e616c20536572766572204572726f720d0a436f6e74656e742d547970653a20746578742f706c61696e3b20636861727365743d7574662d380d0a582d436f6e74656e742d547970652d4f7074696f6e733a206e6f736e6966660d0a446174653a20203c52454441435445443e0d0a436f6e74656e742d4c656e6774683a2033300d0a",
+                "discovery_method": "IPV4_WALK_FULL_PRIORITY_3",
+                "extended_service_name": "HTTP",
+                "http": {
+                    "request": {
+                        "method": "GET",
+                        "uri": "http://184.64.100.125:49137/",
+                        "headers": {
+                            "User_Agent": [
+                                "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+                            ],
+                            "_encoding": {
+                                "User_Agent": "DISPLAY_UTF8",
+                                "Accept": "DISPLAY_UTF8"
+                            },
+                            "Accept": [
+                                "*/*"
+                            ]
+                        }
+                    },
+                    "response": {
+                        "protocol": "HTTP/1.1",
+                        "status_code": 500,
+                        "status_reason": "Internal Server Error",
+                        "headers": {
+                            "X_Content_Type_Options": [
+                                "nosniff"
+                            ],
+                            "_encoding": {
+                                "X_Content_Type_Options": "DISPLAY_UTF8",
+                                "Date": "DISPLAY_UTF8",
+                                "Content_Length": "DISPLAY_UTF8",
+                                "Content_Type": "DISPLAY_UTF8"
+                            },
+                            "Date": [
+                                "<REDACTED>"
+                            ],
+                            "Content_Length": [
+                                "30"
+                            ],
+                            "Content_Type": [
+                                "text/plain; charset=utf-8"
+                            ]
+                        },
+                        "body_size": 30,
+                        "_encoding": {
+                            "body": "DISPLAY_UTF8",
+                            "body_hash": "DISPLAY_UTF8"
+                        },
+                        "body": "Could not reach origin server\n",
+                        "body_hashes": [
+                            "sha256:e09956107c8c424a1abc476058e2d44861381e41e53c649026639c9057684ca5",
+                            "sha1:69de594d27ea77cea632fec5df6e8dfbec09e869"
+                        ],
+                        "body_hash": "sha1:69de594d27ea77cea632fec5df6e8dfbec09e869"
+                    },
+                    "supports_http2": false
+                },
+                "observed_at": "2024-07-29T04:45:52.700733544Z",
+                "perspective_id": "PERSPECTIVE_NTT",
+                "port": 49137,
+                "service_name": "HTTP",
+                "source_ip": "206.168.34.120",
+                "transport_protocol": "TCP",
+                "truncated": false
+            }
+        ],
+        "location": {
+            "continent": "North America",
+            "country": "Canada",
+            "country_code": "CA",
+            "city": "Calgary",
+            "postal_code": "T3S",
+            "timezone": "America/Edmonton",
+            "province": "Alberta",
+            "coordinates": {
+                "latitude": 51.05011,
+                "longitude": -114.08529
+            }
+        },
+        "location_updated_at": "2024-07-26T02:35:04.681534318Z",
+        "autonomous_system": {
+            "asn": 6327,
+            "description": "SHAW",
+            "bgp_prefix": "184.64.100.0/22",
+            "name": "SHAW",
+            "country_code": "CA"
+        },
+        "autonomous_system_updated_at": "2024-07-26T02:35:04.681577625Z",
+        "whois": {
+            "network": {
+                "handle": "SHAW-COMM",
+                "name": "Shaw Communications Inc.",
+                "cidrs": [
+                    "184.64.0.0/13"
+                ],
+                "created": "2010-01-15T00:00:00Z",
+                "updated": "2012-03-02T00:00:00Z",
+                "allocation_type": "ALLOCATION"
+            },
+            "organization": {
+                "handle": "SHAWC",
+                "name": "Shaw Communications Inc.",
+                "street": "Suite 800\\n630 - 3rd Ave. SW",
+                "city": "Calgary",
+                "state": "AB",
+                "postal_code": "T2P-4L4",
+                "country": "CA",
+                "abuse_contacts": [
+                    {
+                        "handle": "SHAWA-ARIN",
+                        "name": "SHAW ABUSE",
+                        "email": "internet.abuse@sjrb.ca"
+                    }
+                ],
+                "admin_contacts": [
+                    {
+                        "handle": "ZS178-ARIN",
+                        "name": "IP Admin",
+                        "email": "Adam.Pattenden@rci.rogers.com"
+                    }
+                ],
+                "tech_contacts": [
+                    {
+                        "handle": "ZHUJI1-ARIN",
+                        "name": "Jing Zhu",
+                        "email": "jing.zhu@sjrb.ca"
+                    },
+                    {
+                        "handle": "ZS178-ARIN",
+                        "name": "IP Admin",
+                        "email": "Adam.Pattenden@rci.rogers.com"
+                    }
+                ]
+            }
+        },
+        "operating_system": {
+            "uniform_resource_identifier": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+            "part": "o",
+            "vendor": "Microsoft",
+            "product": "Windows",
+            "other": {
+                "family": "Windows"
+            }
+        },
+        "dns": {
+            "names": [
+                "s0106000acd2a7a0f.cg.shawcable.net"
+            ],
+            "records": {
+                "s0106000acd2a7a0f.cg.shawcable.net": {
+                    "record_type": "A",
+                    "resolved_at": "2024-07-13T00:15:34.916293576Z"
+                }
+            },
+            "reverse_dns": {
+                "names": [
+                    "S0106000acd2a7a0f.cg.shawcable.net"
+                ],
+                "resolved_at": "2024-07-14T08:07:25.102701728Z"
+            }
+        },
+        "last_updated_at": "2024-07-29T05:44:39.997Z",
+        "labels": [
+            "file-sharing"
+        ]
+    }
+}
