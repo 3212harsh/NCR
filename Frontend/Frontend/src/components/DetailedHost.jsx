@@ -129,7 +129,7 @@ const DetailedHost = () => {
 
           <div>
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Port Data</h3>
-            {data.data.map((entry, index) => (
+            {data.data.map((entry, index) => (  
               <div key={index} id={`port-data-${entry.port || entry.http?.port}`} className="p-4 mb-4 border border-gray-300 rounded-md bg-gray-50 shadow-md min-w-full h-fit"> {/* Fixed height for each port data */}
                 <h4 className="text-lg font-semibold text-gray-800">Data for Port: {entry.port || entry.http?.port}</h4>
                 <p><strong>Timestamp:</strong> {new Date(entry.timestamp).toLocaleString()}</p>

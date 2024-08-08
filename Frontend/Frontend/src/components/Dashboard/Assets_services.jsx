@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Eachservice from './Eachservice';
 import Loader from '../../shared/loader';
+import EachService from './Eachservice';
 
 const Assets_services = () => {
 
@@ -32,7 +33,7 @@ const Assets_services = () => {
 
   return (
     <div className=' w-[90%] flex justify-center flex-wrap gap-12'>
-      {services.map((e)=>(<Eachservice service={e.service_name} hosts={e.service_hosts} />))}
+      {services.map((e)=>(<EachService  ervice service={e.service_name} hosts={e.service_hosts} />))}
     </div>
   )
 }

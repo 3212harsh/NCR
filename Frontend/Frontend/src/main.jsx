@@ -8,6 +8,7 @@ import Assets_services from './components/Dashboard/Assets_services.jsx'
 import Showall from './components/Showall.jsx'
 import DetailedHost from './components/DetailedHost.jsx'
 import SearchResult from './components/SearchResult.jsx'
+import SSL from './components/SSL/SSL.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
         <Route path='search' element={<SearchResult/>} />
       </Route>
       <Route path='show/:ip' element={<DetailedHost/>}  ></Route>
+      <Route path='/SSL' element={<SSL/>}></Route>
     </Route>
   )
 )
