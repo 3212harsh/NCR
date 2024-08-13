@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Loader from '../shared/loader';
 import Showhost from './Showhost';
 import { FaArrowLeft } from 'react-icons/fa';
-import BackBtn from '../shared/BackBtn';
 
 const Showall = () => {
   const { service } = useParams();

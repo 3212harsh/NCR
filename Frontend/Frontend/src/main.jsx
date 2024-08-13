@@ -8,7 +8,10 @@ import Assets_services from './components/Dashboard/Assets_services.jsx'
 import Showall from './components/Showall.jsx'
 import DetailedHost from './components/DetailedHost.jsx'
 import SearchResult from './components/SearchResult.jsx'
-import SSL from './components/SSL/SSL.jsx'
+
+import VirusScan from './pages/VirusScan.jsx'
+import SSL from './pages/SSL.jsx'
+import SSLCertificateDetail from './components/SSL/SSLdetailed.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,9 +20,12 @@ const router = createBrowserRouter(
         <Route path='' element = {<Assets_services/>}></Route>
         <Route path='showall/:service' element = {<Showall/>} ></Route>
         <Route path='search' element={<SearchResult/>} />
-      </Route>
+      </Route> 
       <Route path='show/:ip' element={<DetailedHost/>}  ></Route>
-      <Route path='/SSL' element={<SSL/>}></Route>
+      <Route path='/SSL' element={<SSL/>}>
+        <Route path='ssldetails' element={<SSLCertificateDetail/>} ></Route>
+      </Route>
+      <Route path='/VirusScan' element={<VirusScan/>} ></Route>
     </Route>
   )
 )

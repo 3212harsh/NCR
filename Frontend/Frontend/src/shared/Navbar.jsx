@@ -20,7 +20,7 @@ const Navbar = () => {
     {
       title:"Virus Scan",
       icon:FaServicestack,
-      path:"/"
+      path:"/VirusScan"
     }
   ]
 

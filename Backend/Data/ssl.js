@@ -1,4 +1,6 @@
 const fs = require('fs').promises;
+const Hostmodel = require('../Database/Hosts');
+const SslModel = require('../Database/SSL'); // Ensure the path is correct
 
 async function getdata(){
     try {
@@ -11,35 +13,42 @@ async function getdata(){
 }
 
 async function ssl(data) {
-    let ssl_certs = [];
-    let unique_ssl = new Set();  // Using Set to ensure uniqueness
+    let sslMap = new Map();
 
     data.forEach((e) => {
         if (e && e.data) {
             e.data.forEach((i) => {
                 if (i.ssl) {
-                    ssl_certs.push(i.ssl);
+                    const sslString = JSON.stringify(i.ssl); // Convert SSL object to string for comparison
+
+                    if (sslMap.has(sslString)) {
+                        sslMap.get(sslString).ips.push(i.ip_str); // Add ip_str to the existing array
+                    } else {
+                        sslMap.set(sslString, { ssl: i.ssl, ips: [i.ip_str] }); // Create new entry with ip_str
+                    }
                 }
             });
         }
     });
 
-    ssl_certs.forEach((e) => {
-        // Convert the SSL object to a string to compare for uniqueness
-        unique_ssl.add(JSON.stringify(e));
-    });
-
-    const uniqueSslArray = Array.from(unique_ssl).map((e) => JSON.parse(e)); // Convert back to objects if needed
+    // Convert the map back to an array of objects
+    const uniqueSslArray = Array.from(sslMap.values());
 
     console.log(`Total unique SSL objects: ${uniqueSslArray.length}`);
-    console.log(uniqueSslArray[0]);  // Optionally print all unique SSL objects
+    
+    // Save each unique SSL certificate and its associated IPs to the database
+    for (const sslData of uniqueSslArray) {
+        const sslEntry = new SslModel(sslData); // Create a new document
+        await sslEntry.save();                  // Save to the database
+    }
+
+    return uniqueSslArray;
 }
 
 async function main() {
     let data = await getdata();
-    if (data) {
-        await ssl(data);
-    }
+    let ssl_data = await ssl(data);
+    console.log(ssl_data[0]);  // Print the first SSL object and associated IPs (ip_str) for demonstration
 }
 
 main();
