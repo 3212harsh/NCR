@@ -11,7 +11,7 @@ import SearchResult from './components/SearchResult.jsx'
 
 import VirusScan from './pages/VirusScan.jsx'
 import SSL from './pages/SSL.jsx'
-import SSLCertificateDetail from './components/SSL/SSLdetailed.jsx'
+import DetailedSSH from './components/SSL/SSLdetailed.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,8 +23,8 @@ const router = createBrowserRouter(
       </Route> 
       <Route path='show/:ip' element={<DetailedHost/>}  ></Route>
       <Route path='/SSL' element={<SSL/>}>
-        <Route path='ssldetails' element={<SSLCertificateDetail/>} ></Route>
       </Route>
+      <Route path='/ssldetails/:serial' element={<DetailedSSH/>} ></Route>
       <Route path='/VirusScan' element={<VirusScan/>} ></Route>
     </Route>
   )

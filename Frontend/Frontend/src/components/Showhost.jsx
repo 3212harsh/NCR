@@ -3,26 +3,37 @@ import { FaGlobe, FaCodeBranch, FaMicrochip } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
-const Showhost = ({ ip, ports, asn, os, location }) => {
-
+const Showhost = ({ ip, ports = [], asn = "N/A", os = "Unknown", location = "Unknown" }) => {
   const navigate = useNavigate();
 
-  const handlenavigate = ()=>{
+  const handlenavigate = () => {
     navigate(`/show/${ip}`);
-  }
+  };
 
   return (
-    <div className='w-[90%] p-4 bg-white border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105 cursor-pointer' onClick={handlenavigate}>
+    <div
+      className='w-[90%] p-4 bg-white border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105 cursor-pointer'
+      onClick={handlenavigate}
+    >
       <div className='flex flex-col sm:flex-row sm:justify-between mb-3'>
         <div className='mb-2 sm:mb-0'>
           <h1 className='text-2xl font-bold text-blue-800'>{ip}</h1>
         </div>
         <div className='flex flex-wrap items-center'>
-          {ports.map((port, index) => (
-            <span key={index} className='text-xs font-semibold text-white bg-blue-600 rounded-full px-3 py-1 m-1 shadow hover:bg-blue-700 transition duration-200'>
-              {port}
+          {ports && ports.length > 0 ? (
+            ports.map((port, index) => (
+              <span
+                key={index}
+                className='text-xs font-semibold text-white bg-blue-600 rounded-full px-3 py-1 m-1 shadow hover:bg-blue-700 transition duration-200'
+              >
+                {port}
+              </span>
+            ))
+          ) : (
+            <span className='text-xs font-semibold text-red-500 bg-gray-200 rounded-full px-3 py-1 m-1'>
+              No ports available
             </span>
-          ))}
+          )}
         </div>
       </div>
       <div className='mt-2 flex flex-col sm:flex-row sm:justify-between'>
@@ -43,6 +54,6 @@ const Showhost = ({ ip, ports, asn, os, location }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Showhost;

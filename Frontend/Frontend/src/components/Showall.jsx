@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Loader from '../shared/loader';
 import Showhost from './Showhost';
-import { FaArrowLeft } from 'react-icons/fa';
+import BackButton from '../shared/BackBtn';
 
 const Showall = () => {
   const { service } = useParams();
@@ -28,10 +28,11 @@ const Showall = () => {
   return (
     <div className='w-full h-screen px-[15%]'>
       <div className='flex items-center justify-between p-4 bg-white border-b mb-10 border-gray-300 rounded-t-lg'>
-      <button onClick={() => navigate(-1)} className='flex items-center text-blue-600'>
+      {/* <button onClick={() => navigate(-1)} className='flex items-center text-blue-600'>
         <FaArrowLeft className='mr-2' />
         Back
-      </button>
+      </button> */}
+      <BackButton/>
         <h1 className='text-xl font-bold'>{`Viewing ${service} Data`}</h1>
         <div className='bg-gray-100 p-2 rounded-lg text-center'>
           <strong>{`Total Results: ${hosts.length}`}</strong>

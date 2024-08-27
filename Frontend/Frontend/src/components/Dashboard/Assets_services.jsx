@@ -33,7 +33,7 @@ const Assets_services = () => {
 
   return (
     <div className=' w-[90%] flex justify-center flex-wrap gap-12'>
-      {services.map((e)=>(<EachService  ervice service={e.service_name} hosts={e.service_hosts} />))}
+      {services.map((e,i)=>(<EachService key={i} service={e.service_name} hosts={e.service_hosts} />))}
     </div>
   )
 }

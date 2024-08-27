@@ -18,7 +18,7 @@ const Filter = ({ onFilter }) => {
     };
 
     return (
-        <div className="sticky top-0 z-10 bg-white shadow-lg p-6 mb-4 rounded-md border border-gray-300">
+        <div className=" top-0 z-10 bg-white shadow-lg p-6 mb-10 w-[100%] rounded-md border border-gray-300">
             <h2 className="text-xl font-semibold mb-4 flex items-center">
                 <FaFilter className="text-blue-600 mr-2 text-lg" />
                 Filter Options
@@ -47,8 +47,8 @@ const Filter = ({ onFilter }) => {
                 </div>
                 
                 {showAdvanced && (
-                    <div className="space-y-4">
-                        <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">
+                    <div className=" w-fit flex items-center justify-between gap-5 ">
+                        <div className="flex items-center border w-[23%] border-gray-300 rounded-md overflow-hidden">
                             <FaSearch className="text-gray-500 ml-3 text-lg" />
                             <input
                                 type="text"
@@ -58,7 +58,7 @@ const Filter = ({ onFilter }) => {
                                 className="w-full p-2 border-none outline-none bg-gray-50"
                             />
                         </div>
-                        <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">
+                        <div className="flex items-center border border-gray-300 w-[23%] rounded-md  overflow-hidden">
                             <FaSearch className="text-gray-500 ml-3 text-lg" />
                             <input
                                 type="text"
@@ -68,7 +68,7 @@ const Filter = ({ onFilter }) => {
                                 className="w-full p-2 border-none outline-none bg-gray-50"
                             />
                         </div>
-                        <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">
+                        <div className="flex items-center border border-gray-300 rounded-md w-[23%] overflow-hidden">
                             <FaSearch className="text-gray-500 ml-3 text-lg" />
                             <input
                                 type="text"
@@ -78,7 +78,7 @@ const Filter = ({ onFilter }) => {
                                 className="w-full p-2 border-none outline-none bg-gray-50"
                             />
                         </div>
-                        <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">
+                        <div className="flex items-center border border-gray-300 rounded-md w-[23%] overflow-hidden">
                             <FaSearch className="text-gray-500 ml-3 text-lg" />
                             <input
                                 type="text"

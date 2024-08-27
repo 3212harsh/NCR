@@ -68,7 +68,7 @@ const Search = () => {
             <FaCaretDown className="absolute top-3 right-3 pointer-events-none" />
           </div>
         </div>
-        <div className="w-1/4">
+        {/* <div className="w-1/4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="service">
             Services
           </label>
@@ -88,8 +88,8 @@ const Search = () => {
             </select>
             <FaCaretDown className="absolute top-3 right-3 pointer-events-none" />
           </div>
-        </div>
-        <div>
+        </div> */}
+        <div className='pt-[2.3%]'>
           <button
             onClick={handleSearch}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-center"

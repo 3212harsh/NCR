@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaServer, FaMapMarkerAlt, FaRegClock, FaGlobe, FaClipboardList } from 'react-icons/fa';
 import { GiNetworkBars } from 'react-icons/gi';
+import BackButton from '../shared/BackBtn';
 
 const DetailedHost = () => {
   const { ip } = useParams(); // Get the IP address from URL parameters
@@ -30,29 +31,20 @@ const DetailedHost = () => {
   }
 
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white shadow-lg rounded-lg relative h-fit"> {/* Set a minimum height */}
-      {/* Back Button */}
+    <div className="w-[90%] mx-auto p-6 bg-white shadow-lg rounded-lg relative h-fit"> {/* Set a minimum height */} 
       <div className="mb-4">
-        <button
-          className="flex items-center px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-md transition duration-300"
-          onClick={() => navigate(-1)} // Navigate back to the previous path
-        >
-          <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0L8 7m-5 5l5 5" />
-          </svg>
-          Back
-        </button>
+        <BackButton/>
       </div>
 
       {/* Main Content */}
       <div className="flex">
         {/* Left Side: Basic Details */}
         <div className="flex-1 pr-4">
-          <h2 className="text-5xl font-bold text-gray-800 mb-2">{data.ip_str}</h2>
+          <h2 className="text-5xl font-bold text-gray-800 m-2">{data.ip_str}</h2>
 
           {/* Hostnames Display */}
           <div className="my-4 mt-2"> {/* Added margin for spacing */}
-            <h3 className="text-xl font-semibold text-gray-800">Hostnames:</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mt-5">Hostnames:</h3>
             <div className="flex flex-wrap gap-2">
               {data.hostnames && data.hostnames.length > 0 ? (
                 data.hostnames.map((hostname, index) => (
@@ -128,7 +120,7 @@ const DetailedHost = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Port Data</h3>
+            <h3 className="text-xl font-semibold text-gray-800 flex mb-4">Port Data</h3>
             {data.data.map((entry, index) => (  
               <div key={index} id={`port-data-${entry.port || entry.http?.port}`} className="p-4 mb-4 border border-gray-300 rounded-md bg-gray-50 shadow-md min-w-full h-fit"> {/* Fixed height for each port data */}
                 <h4 className="text-lg font-semibold text-gray-800">Data for Port: {entry.port || entry.http?.port}</h4>
@@ -136,7 +128,7 @@ const DetailedHost = () => {
                 <p><strong>ISP:</strong> {entry.isp}</p>
                 <p><strong>Protocol:</strong> {entry.transport}</p>
                 <p><strong>Server:</strong> {entry.http?.server}</p>
-                <p><strong>Data:</strong> {entry.data || 'No data available'}</p>
+                <p className=' overflow-hidden'><strong>Data:</strong> {entry.data || 'No data available'}</p>
               </div>
             ))}
           </div>

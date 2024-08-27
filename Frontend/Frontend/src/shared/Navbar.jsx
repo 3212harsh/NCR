@@ -37,7 +37,7 @@ const Navbar = () => {
         <FaBars size={24} />
       </button>
       <ul className="mt-20 space-y-6 w-full">
-        {paths.map((e)=>(<NavItem title={e.title} icon={e.icon} path={e.path} expanded={expanded} />))}
+        {paths.map((e,i)=>(<NavItem key={i} title={e.title} icon={e.icon} path={e.path} expanded={expanded} />))}
       </ul>
     </div>
   );

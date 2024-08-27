@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBarcode, FaBuilding, FaMapMarkerAlt, FaServer, FaShieldAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 // Mapping of country codes to full names
 const countryNames = {
@@ -31,12 +32,11 @@ const stateNames = {
 };
 
 const Card = ({ data }) => {
-    console.log("data = ",data);
     
     const fullLocation = `${stateNames[data.ssl.cert.subject.ST] || data.ssl.cert.subject.ST}, ${countryNames[data.ssl.cert.subject.C] || data.ssl.cert.subject.C}`;
 
     return (
-        <div className="bg-gray-100 shadow-lg rounded-lg p-6 mb-4 transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300">
+        <Link to={`/ssldetails/${data.ssl.cert.serial}`} className="bg-gray-100 shadow-lg rounded-lg p-6 mb-4 transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300">
             {/* Serial Number */}
             <div className="flex flex-col md:flex-row items-start md:items-center mb-4">
                 <FaBarcode className="text-blue-600 mr-3 text-2xl" />
@@ -66,7 +66,7 @@ const Card = ({ data }) => {
                      <p className="text-md font-medium text-gray-800">Issuer: {data.ssl.cert.issuer.CN} ({data.ssl.cert.issuer.O})</p>
                  </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

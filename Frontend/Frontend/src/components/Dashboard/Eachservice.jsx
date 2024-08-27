@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const EachService = (props) => {
     const { service, hosts } = props;
-    // const [selectedIp, setSelectedIp] = useState('');
 
     return (
 
@@ -15,7 +14,7 @@ const EachService = (props) => {
                 <span className='text-white text-sm font-light italic' > Total results = <span className='font-semibold'>{hosts.length}</span></span>
              </div>
             <div className='px-4 py-3 h-[22vh] flex flex-col bg-slate-100 text-[20px] overflow-y-auto '>
-                {hosts.map((e)=>(<Link to={`/show/${e.ip}`} className='hover:bg-slate-300 rounded-sm font-semibold font-sans px-2  cursor-pointer'>{e.ip}</Link>))}
+                {hosts.map((e,i)=>(<Link key={i} to={`/show/${e.ip}`} className='hover:bg-slate-300 rounded-sm font-semibold font-sans px-2  cursor-pointer'>{e.ip}</Link>))}
             </div>
             </div>
             <div className='flex pb-2 h-auto justify-end px-2 py-1'>
